@@ -69,20 +69,32 @@ string removeSpaces(string input)
 }
 string findMistake(string fixedFirst, string fixedSecond)
 {
-	for(int i = 0; i < fixedFirst.length(); i ++){
-		for(int j = 0; j < fixedSecond.length(); j++) {
+	int mistake;
 
-			if (fixedFirst[i] != fixedSecond[j]) {
-
-
-			cout << " The Mistake is "  << fixedFirst[i] << " " << fixedSecond[j] << " at the ";
-			// + std::string(i) +" position of the string";
-			break;
-			}
-
-
-
-		}
+	if(fixedFirst.length() > fixedSecond.length()) {
+		cout << "The first string is too long!";
 	}
+	else if(fixedFirst.length() < fixedSecond.length()) {
+		cout << "The second string is too long!";
+	}
+
+	else{
+	for(int i = 0; i < fixedFirst.length(); i ++){
+
+
+
+			if (fixedFirst[i] != fixedSecond[i]) {
+
+				 mistake = i +1;
+				 break;
+
+
+
+			} // end if
+
+	   } //end for
+	 cout << " The first mistake is at the " << mistake << " position";
+	} //end else
+
 
 }

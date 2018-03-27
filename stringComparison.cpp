@@ -1,9 +1,8 @@
 //============================================================================
 // Name        : stringComparison.cpp
-// Author      : 
+// Author      : Justin Hurley
 // Version     :
-// Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
+// Description : Compares two strings and determines equality
 //============================================================================
 
 #include <iostream>
@@ -23,8 +22,8 @@ int main() {
 	string fixedFirst;
 	string fixedSecond;
 
-	cout << "Welcome to the string comparison Justin, Enter -999 if done comparing" << endl;
-	//while(firstString != "-999" || secondString != "-999"){
+	cout << "Welcome to the string comparison, User!" << endl;
+	
 
 	cout << "Please Enter the first string to be compared" << endl;
 	while(getline(cin, firstString) && !firstString.empty()){
